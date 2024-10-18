@@ -1,0 +1,241 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #faf3e0; /* Color de fondo cálido y suave */
+}
+
+/* Header and Navbar */
+header {
+    background-color: #2e3a23; /* Verde oscuro inspirado en la naturaleza */
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #f5f2e1; /* Color crema */
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Inicio */
+#inicio {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f4e3c2; /* Tono cálido pastel */
+    border: 1px solid #c9c2b2; /* Borde suave */
+    border-radius: 5px;
+    margin: 10px;
+    flex: 1 1 calc(25% - 40px);
+    max-width: calc(25% - 40px);
+    text-align: center;
+    padding: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #2e3a23; /* Verde oscuro */
+}
+
+.card p {
+    margin-bottom: 15px;
+    color: #4a4a4a; /* Gris oscuro */
+}
+
+.details-button {
+    text-decoration: none;
+    color: #f5f2e1; /* Crema */
+    background-color: #2e3a23; /* Verde oscuro */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.details-button:hover {
+    background-color: #4a5b36; /* Verde ligeramente más claro */
+}
+
+/* Secciones El Estudio y El Director */
+#estudio, #director {
+    padding: 20px;
+    background-color: #f4e3c2; /* Tono cálido pastel */
+    margin: 20px 0;
+}
+
+#estudio h2, #director h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2e3a23; /* Verde oscuro */
+}
+
+#estudio p, #director p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #4a4a4a; /* Gris oscuro */
+}
+
+/* Footer */
+footer {
+    background-color: #2e3a23; /* Verde oscuro */
+    color: #f5f2e1; /* Crema */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Estilo para imágenes de sección */
+.section-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Estilo para los enlaces sociales */
+.social-links a {
+    color: #f5f2e1; /* Crema */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilo para imágenes de sección */
+.section-image {
+    width: 100%;  /* Se mantiene el 100% de su contenedor */
+    max-width: 600px;  /* Establece un tamaño máximo */
+    height: 400px;  /* Fija la altura para que ambas imágenes sean iguales */
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;  /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+}
+
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Formulario */
+form {
+    background-color: #f4e3c2;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2e3a23;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2e3a23;
+    color: #f5f2e1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a5b36;
+}
+
+/* Tabla de usuarios */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2e3a23;
+    color: #f5f2e1;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana */
+}
+
+main {
+    flex: 1; /* Permite que el main crezca y ocupe el espacio disponible */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+}

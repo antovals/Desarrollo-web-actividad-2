@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana */
+        }
+
+        main {
+            flex: 1; /* Permite que el main crezca y ocupe el espacio disponible */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="#userTable">Tabla de Usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Registro de Usuarios -->
+        <section id="registro">
+            <h2>Registro de Usuarios</h2>
+            <form id="userForm">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="cedula">Cédula (ID):</label>
+                <input type="number" id="cedula" name="cedula" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+
+                <label for="profesion">Profesión:</label>
+                <input type="text" id="profesion" name="profesion" required>
+
+                <button type="submit">Registrar Usuario</button>
+            </form>
+        </section>
+
+        <!-- Tabla de Usuarios -->
+        <section id="userTable">
+            <h2>Usuarios Registrados</h2>
+            <button id="listarBtn">Listar Usuarios</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Género</th>
+                        <th>Profesión</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Aquí se cargarán los usuarios -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <p>Desarrollado por Antonio Medina</p>
+        <div class="social-links">
+            <a href="www.linkedin.com/in/antonio-medina-avendaño-44a215203" target="_blank">LinkedIn</a>
+            <a href="https://github.com/antovals" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
